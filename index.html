@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The text inside the <title> tags controls what appears in the browser tab. -->
+    <!-- The tab title is set here -->
     <title>SklGPT 3-o Ultra</title>
     
-    <!-- Favicon link: Replace the URL below with the link to your custom logo image (e.g., a PNG or ICO file) -->
-    <link rel="icon" type="image/png" href="https://example.com/your-custom-logo.png">
+    <!-- 
+    Favicon link: This assumes you have uploaded your logo 
+    named 'unnamed__1_-removebg-preview.png' 
+    to the main directory of your repository.
+    -->
+    <link rel="icon" type="image/png" href="unnamed__1_-removebg-preview.png">
+    
     <style>
         /* CSS to ensure the iframe takes up the full browser screen */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
+            /* Ensures no scrollbars appear due to embedding */
             overflow: hidden; 
         }
         .full-screen-iframe {
             width: 100%;
             height: 100%;
-            border: none; /* Removes any default border around the chatbot window */
+            /* Removes the default border from the frame */
+            border: none; 
         }
     </style>
 </head>
 <body>
 
     <!-- 
-    The iframe loads your external chatbot link.
-    It uses the full-screen-iframe class to ensure it dominates the view.
+    The iframe loads your external chatbot link and uses 
+    the CSS class to make it full screen.
     -->
     <iframe 
         class="full-screen-iframe" 
@@ -38,5 +45,3 @@
 
 </body>
 </html>
-
-
